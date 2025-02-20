@@ -1,0 +1,188 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+
+%RESUME
+
+\begin{document}
+
+%HEADER
+\begin{center}
+    \textbf{\Huge \scshape Carlos Rogelio Rivas Mireles} \\ \vspace{1pt}
+    
+    $|$ \small \underline{871-593-7079} 
+    $|$ \href{mailto:rogeliorivasm@icloud.com}{\underline{rogeliorivasm@icloud.com}} 
+    $|$ \href{https://www.linkedin.com/in/rogedev/}{\underline{linkedin.com/in/rogedev}} 
+    $|$ \href{https://github.com/rogedev}{\underline{github.com/rogedev}} 
+    $|$ \href{https://roge-dev.vercel.app/}{\underline{My website}}
+    $|$
+\end{center}
+
+%EDUCATION
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Instituto Tecnologico Superior de Lerdo} {}
+      {Bachelor of Computer Systems Engineering} {}
+  \resumeSubHeadingListEnd
+
+
+  %EXPERIENCE
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Software Engineer}{Sept 2022 -- Present}
+      {PideDirecto}{Monterrrey, N.L. Mx.}
+      \resumeItemListStart
+        \resumeItem{Continuous development of a serverless applications using Node.js, React.js, TypeScript. MongoDB and AWS services (Lambda, Cognito, SNS, SES, S3), following agile methodologies.}
+        \resumeItem{Designed scalable solutions to implement new features requested by stakeholders.}
+        \resumeItem{Integrated external services for invoicing, messaging, online payments, logistics and e-commerce.}
+        \resumeItem{Identified and solved issues using AWS CloudWatch and debugging tools.}
+        \resumeItem{Conducted code reviews to maintain high quality code.}
+        \resumeItem{Wrote unit tests to ensure code reliability using Vitest.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Web Developer}{Feb 2022 -- Sept 2022}
+      {Evidence Technology}{Torreon, Coah. Mx.}
+      \resumeItemListStart
+        \resumeItem{Continuous development of an ERP system using PHP, Vue.js, TypeScript, MySQL, and AWS, ensuring scalability and performance.}
+        \resumeItem{Took ownership of multiple ERP modules (Accounting, Logistics, Inventory, etc.), designing and developing new features to meet the needs of clients using the system.}
+        \resumeItem{Optimized database queries improving system performance by 50\% and reducing operational costs.}
+        \resumeItem{Conducted system testing to ensure functionality met expectations and requirements.}
+        \resumeItem{Work with the an Agile team}
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {Web Developer Jr}{July 2021 -- Feb. 2022}
+      {ASTA software}{Torreon, Coah. Mx.}
+      \resumeItemListStart
+        \resumeItem{Designed and developed multiple websites using HTML, CSS, and JavaScript, ensuring responsive and user-friendly interfaces.}
+        \resumeItem{Developed a fullstack ticket reporting application using MVC architecture, PHP (Laravel framework) and MySQL.}
+        \resumeItem{Led requirements gathering sessions for customer websites to define project scope and objectives.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%PROJECTS (add more)
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Personal Portfolio} $|$ \emph{Next.js, Typescript, Tailwindcss}}{\href{https://roge-dev.vercel.app/}{Portfolio Link}}
+          \resumeItemListStart
+            \resumeItem{Developed a personal portfolio frontend application to showcase my projects, skills, and experience.}
+            \resumeItem{Integrated GitHub API to display my contributions graph dynamically.}
+            \resumeItem{Implemented Tailwind CSS to create customizable color themes for a personalized design.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+%PROGRAMMING SKILLS
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages:}{ JavaScript, Typescript, Python, PHP and Go.} \\
+     \textbf{Frameworks and libraries:}{ React.js, Astro, Next.js, Nest.js, Express.js, Flask and Gin} \\
+     \textbf{Databases:}{ MongoDB, MySQL, PostgreSQL.} \\
+     \textbf{Cloud}{: AWS, Google Cloud.} \\
+     \textbf{Development Tools}{: Git, GitHub, Docker.} \\
+    }}
+ \end{itemize}
+
+
+
+\end{document}
+
