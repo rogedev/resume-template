@@ -2,7 +2,7 @@
 
 This resume template generates an optimized pdf that is machine readable/ATS parsable.
 
-To compile the pdf file you will need to have liveText installed on your machine.
+To compile the pdf file you will need to have texlive installed on your machine.
 
 https://www.tug.org/texlive/
 
