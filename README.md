@@ -1,14 +1,14 @@
-# Resume template
+# Resume Template
 
-This resume template generates an optimized pdf that is machine readable/ATS parsable.
+A LaTeX resume template that compiles to an optimized, machine-readable PDF suitable for ATS (Applicant Tracking Systems).
 
-To compile the pdf file you will need to have texlive installed on your machine.
+## Requirements
 
-https://www.tug.org/texlive/
+You need **TeX Live** installed to compile the PDF.
 
-## TexLive Installation
+- [Download TeX Live](https://www.tug.org/texlive/)
 
-### MacOS
+### macOS
 
 ```bash
 brew install texlive
@@ -20,24 +20,23 @@ brew install texlive
 sudo apt install texlive
 ```
 
-## Project installation
+## Getting Started
 
-Clone the project
+1. **Clone the repository**
 
-```bash
-git clone https://github.com/rogedev/resume-template
-```
+   ```bash
+   git clone https://github.com/rogedev/resume-template
+   cd resume-template
+   ```
 
-Go to the project directory
+2. **Compile to PDF**
 
-```bash
-cd resume-template
-```
+   ```bash
+   make build
+   ```
 
-Compile to pdf file
+   The output PDF is generated from `template.tex`.
 
-```bash
-make build
-```
+## Alternative: Overleaf
 
-You can also use the overleaf tool to edit and compile the template https://www.overleaf.com/
+You can edit and compile the template online using [Overleaf](https://www.overleaf.com/). Upload `template.tex` and any required files to your project.
